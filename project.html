@@ -19,33 +19,94 @@
     </nav>
   </header>
   <hr>
+
   <main>
+    <!-- FITUR 1: Formulir Input Proyek Dinamis -->
+    <section id="form-proyek-section">
+      <h2>Tambah Proyek Baru</h2>
+      <form id="project-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="project-title">Judul Proyek</label>
+            <input
+              type="text"
+              id="project-title"
+              placeholder="Contoh: Aplikasi E-Commerce"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="project-category">Kategori</label>
+            <select id="project-category">
+              <option value="Web App">Web App</option>
+              <option value="Mobile App">Mobile App</option>
+              <option value="Desktop App">Desktop App</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="project-budget">Estimasi Anggaran (Rp)</label>
+            <input
+              type="number"
+              id="project-budget"
+              placeholder="Contoh: 5000000"
+            >
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="project-completed">
+            <label for="project-completed">Sudah Selesai</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">+ Tambah Proyek</button>
+      </form>
+    </section>
+
+    <!-- Kartu Ringkasan Statistik -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>Total Proyek</h3>
+        <p id="stat-total-projects">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Total Anggaran</h3>
+        <p id="stat-total-budget">Rp 0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Selesai Dikerjakan</h3>
+        <p id="stat-completed-projects">0</p>
+      </div>
+    </div>
+
+    <!-- FITUR 2 & 3: Daftar Proyek, Filter Kategori, Live Search & Aksi Kartu -->
     <section id="daftar-proyek">
       <h2>Semua Proyek</h2>
-      <article>
-        <header>
-          <h3>Sistem Manajemen Inventori Database</h3>
-          <p>Teknologi: HTML, CSS, JavaScript, MySQL | <time datetime="2026">2026</time></p>
-        </header>
-        <p>Aplikasi web lokal untuk mencatat dan mengelola sirkulasi barang, terintegrasi dengan MySQL.</p>
-        <ul>
-          <li>Pencatatan barang masuk dan keluar</li>
-          <li>Penyimpanan data di database MySQL</li>
-        </ul>
-      </article>
-      <article>
-        <header>
-          <h3>Aplikasi Kasir &amp; Perhitungan Transaksi</h3>
-          <p>Teknologi: JavaScript ES6+ | <time datetime="2026">2026</time></p>
-        </header>
-        <p>Program pemrosesan transaksi belanja yang menghitung total bayar dan diskon berbasis Array of Objects.</p>
-        <ul>
-          <li>Perhitungan total belanja</li>
-          <li>Perhitungan diskon otomatis</li>
-        </ul>
-      </article>
+
+      <div class="toolbar">
+        <div class="filter-group">
+          <button type="button" class="btn-filter active" data-category="Semua">Semua Proyek</button>
+          <button type="button" class="btn-filter" data-category="Web App">Web App</button>
+          <button type="button" class="btn-filter" data-category="Mobile App">Mobile App</button>
+          <button type="button" class="btn-filter" data-category="Desktop App">Desktop App</button>
+          <button type="button" class="btn-filter" data-category="UI/UX Design">UI/UX Design</button>
+        </div>
+
+        <div class="search-group">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Cari judul proyek..."
+          >
+        </div>
+      </div>
+
+      <!-- Kontainer Daftar Proyek (diisi otomatis oleh main.js) -->
+      <div id="project-list"></div>
     </section>
   </main>
+
   <hr>
   <aside>
     <h3>Ingin Berkolaborasi?</h3>
@@ -55,5 +116,8 @@
   <footer>
     <p>&copy; 2026 Portofolio Mahasiswa - All Rights Reserved.</p>
   </footer>
+
+  <!-- Menghubungkan file JavaScript eksternal -->
+  <script src="main.js"></script>
 </body>
 </html>

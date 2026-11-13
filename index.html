@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Daftar Tugas - Pertemuan 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="app-header">
+      <h1>Daftar Tugas Saya</h1>
+      <!-- FITUR 1: Penghitung Jumlah Tugas (Task Counter) -->
+      <p id="task-counter" class="task-counter">
+        Total: 0 Tugas | Selesai: 0 | Belum Selesai: 0
+      </p>
+    </header>
+
+    <!-- Form Tambah Tugas -->
+    <form id="todo-form" class="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="Masukkan nama tugas baru..."
+        autocomplete="off"
+      >
+      <button type="submit" class="btn-tambah">Tambah</button>
+    </form>
+
+    <!-- Daftar Tugas -->
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <!-- FITUR 2: Tombol 'Bersihkan Tugas Selesai' di bagian bawah daftar tugas -->
+    <div class="footer-actions">
+      <button type="button" id="clear-completed-btn" class="btn-clear">
+        Bersihkan Tugas Selesai
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

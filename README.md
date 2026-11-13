@@ -1,7 +1,7 @@
 # Repositori Praktikum Pemrograman Web 2026
 **Informasi Mahasiswa:**
-* **Nama:**         Mochamad Asad Badriana
-* **NIM:**          2406126
+* **Nama:**         Muhammad Rifki Rahayu
+* **NIM:**          2406057
 * **Kelas/Prodi:**  Teknik Informatika - ITG
 * **Kode MK:**      IFRWP5151
 ---
@@ -15,11 +15,10 @@ TUGAS:
 ### Spesifikasi Perangkat
 **Perangkat**
 
-- **Laptop:**         Lenovo Legion 5 Pro 16ACH6H
-- **Processor:**      AMD Ryzen 7 5800H with Radeon Graphics
+- **Laptop:**         DELL LATITUDE 7300
+- **Processor:**      Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz (2.11 GHz)
 - **RAM:**            32 GB
-- **Storage:**        SSD 951,6 GB
-- **VGA:**            NVIDIA GeForce RTX 3070 Laptop GPU
+- **Storage:**        238 GB
 - **Sistem Operasi:** Windows 11 Home Single Language
 - **Node.js:**        v26.3.1
 - **Git:**            2.54.0.windows.1
